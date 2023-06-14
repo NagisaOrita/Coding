@@ -1,0 +1,204 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", sans-serif;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    color: #45484C;
+
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #45484C;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.c-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+/* Colors */
+/* ----------------------------------------------------------------------------------- */
+:root {
+    --brown: #C1811F;
+    --green: #1878AD;
+    --red: #C30D23;
+    --lightgreen: #679A3B;
+    --yellow: #F8EA19;
+    --orangepink: #F16262;
+    --blue: #41B4F0;
+    --black: #45484C;
+    --white: #ffffff;
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.brown {
+    background-color: var(--brown);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+/* 
+
+ABOUT PAGE
+
+*/
+
+h6 {
+    font-family: 'A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n", 'Shippori Mincho B1', "YuMincho", "Yu Mincho", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+h5 {
+    font-family: 'A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n", 'Shippori Mincho B1', "YuMincho", "Yu Mincho", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.04em;
+}
+
+h4 {
+    font-family: 'YuGothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Avenir Next', "metropolis-semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 66px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 242px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'A-OTF Ryumin Pr6N';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+}
+
+#privacy_policy p {
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 38px;
+    /* identical to box height, or 213% */
+    letter-spacing: 0.04em;
+    margin-bottom: 30px;
+}
+
+/* 
+
+header
+
+*/
+.header_inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.header_logo {
+    width: 75px;
+}
+
+ul {
+    display: flex;
+    gap: 55px;
+}
+
+
+.fv_inner {
+    background-image: url(../images/footer_bg.jpg);
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    margin: 160px 360px 0;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 13px;
+        line-height: 21px;
+        letter-spacing: 0.04em;
+    }
+    main {
+        margin: 60px 20px;
+    }
+}

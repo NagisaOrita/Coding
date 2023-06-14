@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ HR Tech Management 株式会社</title>
+    <link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/favicon.ico" sizes="180x180">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/common2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'xir4ogu',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="fv">
+        <header id="header" class="header">
+            <div class="header_inner">
+                <a href="./index.html">
+                    <div class="header_logo">
+                        <img src="./images/fv_logo.png" alt="">
+                    </div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="./about.html">HRTMについて</a></li>
+                        <li><a href="./service.html">サービス</a></li>
+                        <li><a href="./credo.html">私達の信条</a></li>
+                        <li><a href="./privacy_policy.html">プライバシポリシー</a></li>
+                        <li><a href="./contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="fv_inner">
+        <h1>お問い合わせ</h1>
+    </div>
+
+    <div class="message">
+        <p>法人向けサービスと個人向けサービスにについてのお問い合わせフォームです。
+            以下に必要事項を入れて送信するか、LINEを追加してメッセージをご記入ください。</p>
+    </div>
+    <div class="box_con">
+        <form method="post" action="./contact.php">
+
+            <table class="formTable">
+
+                <tr>
+                    <th>会社名<span>必須</span></th>
+                    <td><input size="60" type="text" name="company" /></td>
+                </tr>
+                <tr>
+                    <th>氏名<span>必須</span></th>
+                    <td><input size="30" type="text" name="name" /></td>
+                </tr>
+                <tr>
+                    <th>電話番号<span>必須</span></th>
+                    <td><input size="30" type="text" name="tel" /></td>
+                </tr>
+                <tr>
+                    <th>メールアドレス <span>必須</span></th>
+                    <td><input size="30" type="text" name="mail" /></td>
+                </tr>
+                <tr>
+                    <th>サービス分類</th>
+                    <td>
+                        <div class="box_br">
+                            <label>
+                                <input name="contact_type" type="radio" value="1" class="radio02-input in_top"
+                                    id="radio02-01">
+                                <label for="radio02-01">To You 経営者の方</label>
+                            </label>
+                        </div>
+                        <div class="box_br">
+                            <label>
+                                <input name="contact_type" type="radio" value="1" class="radio02-input in_top"
+                                    id="radio02-02">
+                                <label for="radio02-02">To B 人事の方</label>
+                            </label>
+                        </div>
+                        <div class="box_br">
+                            <label>
+                                <input name="contact_type" type="radio" value="1" class="radio02-input in_top"
+                                    id="radio02-03">
+                                <label for="radio02-03">To C これからキャリアを創る方</label>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>お問い合わせ内容 <span>必須</span></th>
+                    <td><textarea name="message" cols="50" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <th>プライバシポリシーに同意する <span>必須</span></th>
+                    <td>
+                        <div class="box_br">
+                            <label>
+                                <input name="agree" type="radio" value="1" class="radio01-input in_top" id="radio01-01">
+                                <label for="radio01-01">同意する</label>
+                            </label>
+                        </div>
+                </tr>
+            </table>
+            <p class="privacy_policy"><a href="./privacy_policy.html">プライバシポリシーの詳細</a>について確認する</p>
+            <p class="btn">
+                <span><input type="submit" value="　 送信 　" /></span>
+            </p>
+        </form>
+    </div>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer_inner">
+            <div class="footer_upper">
+                <div class="footer_upleft">
+                    <figure class="footer_logo">
+                        <img src="./images/fv_logo.png" alt="">
+                    </figure>
+                    <div class="footer_info">
+                        <p class="footer_name">HR Tech Management 株式会社</p>
+                        <div class="branch_tokyo">
+                            <p>東京Office</p>
+                            <p>〒150-0021</p>
+                            <p>東京都渋谷区恵比寿西1-22-1</p>
+                            <p>GNビル2F</p>
+                        </div>
+                        <div class="branch_osaka">
+                            <p>大阪Office</p>
+                            <p>〒530-0017</p>
+                            <p>大阪府大阪市北区角田町8-47</p>
+                            <p>阪急グランドビル20F</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_upright">
+                    <div class="footer_btn">
+                        <button class="footer_mail">
+                            <a href="./contact.html">
+                                <img src="./images/mail.png" alt="Mail">
+                                <p>お問い合わせ</p>
+                            </a>
+                        </button>
+                        <!-- <button class="footer_line">
+
+                        </button> -->
+                    </div>
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="./about.html">HRTMについて</a></li>
+                            <li><a href="./service.html">サービス</a></li>
+                            <li><a href="./credo.html">私達の信条</a></li>
+                            <li><a href="./privacy_policy.html">プライバシポリシー</a></li>
+                            <li><a href="./about.html#company">会社概要</a></li>
+                            <li><a href="./contact.html">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_down">
+                <p>人の活躍する舞台を創り続ける</p>
+            </div>
+            <div class="copyright">
+                <p>© HRTechManagement Co., Ltd.</p>
+            </div>
+        </div>
+    </footer>
+  <script>
+        window.onload = function () {
+            const spinner = document.getElementById('loading');
+            spinner.classList.add('loaded');
+        }
+        $(function () {
+            $(window).on('load scroll', function () {
+                var $header = $('.header');
+
+                // 200以上スクロールしたら処理
+                if ($(window).scrollTop() > 200) {
+                    $header.addClass('sticky');
+                } else {
+                    $header.removeClass('sticky');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

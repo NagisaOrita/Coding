@@ -1,0 +1,545 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", sans-serif;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    color: #45484C;
+
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #45484C;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.c-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+/* Colors */
+/* ----------------------------------------------------------------------------------- */
+:root {
+    --brown: #C1811F;
+    --green: #1878AD;
+    --red: #C30D23;
+    --lightgreen: #679A3B;
+    --yellow: #F5E929;
+    --orangepink: #F16262;
+    --blue: #41B4F0;
+    --black: #45484C;
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.brown {
+    background-color: var(--brown);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+/* 
+
+ABOUT PAGE
+
+*/
+h4 {
+    font-family: 'A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n", 'Shippori Mincho B1', "YuMincho", "Yu Mincho", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', "Cormorant", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h2 {
+    font-family: 'A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n", 'Shippori Mincho B1', "YuMincho", "Yu Mincho", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 74px;
+}
+
+h1 {
+    font-family: 'A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n", 'Shippori Mincho B1', "YuMincho", "Yu Mincho", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+}
+
+.message_dwn {
+    font-size: 15px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+}
+
+.ceo_name p {
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+}
+
+.ceo_name p:first-child {
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+}
+
+.smp_br{
+    display: none;
+}
+
+/* 
+
+header
+
+*/
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.sticky .header_inner {
+    align-items: center;
+}
+
+.header_logo {
+    width: 75px;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    background: #fff;
+    padding: 0;
+    width: calc(100% - 0px);
+}
+
+.header.sticky .header_logo {
+    width: 75px;
+}
+
+.header.sticky .nav-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header.sticky li a {
+    color: var(--black);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 55px;
+}
+
+.about_img {
+    background-image: url(../images/about_ceo.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    width: 56.18vw;
+    height: 290px;
+}
+
+.fv_inner {
+    background-image: url(../images/footer_bg.jpg);
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+
+Mesage section
+
+*/
+.message_upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 200px 60px 86px;
+}
+
+.message_dwn {
+    margin-right: 200px;
+    width: 56.18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.message_dwn h4 {
+    margin-bottom: 60px;
+}
+
+.message_dwn p {
+    margin-bottom: 60px;
+}
+
+.message_dwn .ceo_name {
+    margin-top: 100px;
+    text-align: right;
+}
+
+.message_dwn .ceo_name p {
+    margin-bottom: 4px;
+}
+
+/* 
+
+Company section
+
+*/
+#company {
+    margin-top: 300px;
+}
+
+#company .section_title {
+    margin-left: 86px;
+}
+
+.office_img{
+    display: flex;
+    margin-bottom: 90px;
+}
+.tokyo_office{
+    width: 50vw;
+    height: 290px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/tokyo_office.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 55%;
+    position: relative;
+}
+.tokyo_office .text, .osaka_office .text{
+    font-family: 'Avenir Next', "metropolis-semibold",Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 238% */
+    color: #FFFFFF;
+
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.osaka_office{
+    width: 50vw;
+    height: 290px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/osaka_office.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 85%;
+    position: relative;
+}
+.company_info {
+    margin: 0 auto;
+}
+
+table {
+    table-layout: fixed;
+}
+
+.company_info th,
+.company_info td {
+    border: 1px solid #C8C5C5;
+    border-left: none;
+    border-right: none;
+    padding: 20px 0;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 38px;
+    padding-right: 4.4vw;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+
+    /* universal */
+    h4 {
+        font-size: 20px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    main{
+        margin: 0 20px;
+    }
+
+    .smp_br{
+        display: block;
+    }
+    
+
+    .header {
+        background-color: white;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    .header__nav {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        background-color: #fff;
+        transition: ease .4s;
+    }
+
+    @media screen and (min-width: 960px) {
+        .header__nav {
+            position: static;
+            transform: initial;
+            background-color: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: end;
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .nav__items {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: initial;
+            justify-content: space-between;
+        }
+    }
+
+    .nav-items {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+    }
+    
+
+
+    @media screen and (min-width: 960px) {
+        .nav-items {
+            position: inherit;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+
+        }
+    }
+    .header__hamburger {
+        width: 48px;
+        height: 100%;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        border-color: transparent;
+        z-index: 9999;
+    }
+
+    @media screen and (min-width: 960px) {
+        .hamburger {
+            display: none;
+        }
+    }
+
+    /* ハンバーガーメニューの線 */
+    .hamburger span {
+        width: 20px;
+        height: 1px;
+        background-color: var(--black);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(2) {
+        margin: 8px 0;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(2) {
+        margin: 8px 0;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 0;
+    }
+    .hamburger.sticky span {
+        width: 20px;
+        height: 1px;
+        background-color: var(--black);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    /* ハンバーガーメニュークリック後のスタイル */
+    .header__nav.active {
+        transform: translateX(0);
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 5px;
+        transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        top: -13px;
+        transform: rotate(-45deg);
+    }
+
+
+
+    .about_img {
+        width: calc(100vw - 40px);
+        height: 130px;
+        order: -1;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .message_upper {
+        flex-direction: column;
+        margin: 0;
+        align-items: flex-start; 
+    }
+
+    .message_dwn {
+        margin: 0;
+        width: auto;
+        font-size: 12px;
+        line-height: 32px;
+    }
+
+    .ceo_name p {
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.04em;
+    }
+
+    .ceo_name p:first-child {
+        font-size: 12px;
+        line-height: 27px;
+    }
+
+    .message_dwn h4{
+        margin: 60px 0 30px;
+    }
+    .message_dwn p{
+        margin-bottom: 50px;
+    }
+    .message_dwn .ceo_name{
+        margin-top: 0;
+    }
+    /* Company */
+    #company{
+        margin-top: 160px;
+    }
+    #company .section_title{
+        margin-left: 0;
+    }
+}

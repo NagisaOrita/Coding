@@ -1,0 +1,711 @@
+/* 
+Fonts
+*/
+@font-face {
+    font-family: "metropolis-bold";
+    src: url(../fonts/Metropolis-Bold.otf) format("opentype")
+}
+
+@font-face {
+    font-family: "metropolis-semibold";
+    src: url(../fonts/Metropolis-SemiBold.otf) format("opentype")
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant:wght@500&display=swap');
+
+
+/* ----------------------------------------------------------------------------------- */
+/* Colors */
+/* ----------------------------------------------------------------------------------- */
+:root {
+    --brown: #C1811F;
+    --green: #1878AD;
+    --red: #C30D23;
+    --lightgreen: #679A3B;
+    --yellow: #F5E929;
+    --orangepink: #F16262;
+    --blue: #41B4F0;
+    --black: #45484C;
+    --orange: #F09829;
+    --purple:#963FF5;
+}
+
+/* 
+PC AND SMP ON OFF
+*/
+.smp_item{
+    display: none;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* spinner */
+/* ----------------------------------------------------------------------------------- */
+#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: var(--blue);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner {
+    width: 108.4px;
+    height: 122.5px;
+    margin: calc(50vh - 61px) auto;
+    background-image: url(../images/logo_white.png);
+    background-size: cover;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+/* HEADER */
+.header a {
+    position: relative;
+}
+
+/*ホバーエフェクト*/
+.header ul a::after {
+    /*アンダーラインのスタイル*/
+    position: absolute;
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: var(--red);
+    bottom: -10px;
+    left: 0;
+    /*幅を0に設定*/
+    width: 0;
+    /*アニメーションの速度設定*/
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.header ul a:hover::after {
+    /*幅を100%に設定*/
+    width: 100%;
+}
+
+.hamburger{
+    display: none;
+}
+
+.header_logo:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.sticky .header_inner {
+    align-items: center;
+}
+.header_inner {
+    align-items: flex-end;
+}
+
+.header_logo {
+    width: 75px;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    background: #fff;
+    padding: 0;
+    width: calc(100% - 0px);
+    z-index: 999;
+}
+
+.header.sticky .header_logo {
+    width: 75px;
+}
+
+.header.sticky .nav-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header.sticky li a {
+    color: var(--black);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* ----------------------------------------------------------------------------------- */
+/* footer */
+/* ----------------------------------------------------------------------------------- */
+#footer {
+    background-image: url(../images/footer_bg.jpg);
+    background-size: cover;
+    margin-top: 220px;
+}
+
+.footer_inner {
+    padding: 0 160px;
+}
+
+.footer_upper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.footer_logo {
+    width: 200px;
+}
+
+.footer_info p {
+    font-family: 'YuGothic', "Yu Gothic Medium", "Yu Gothic", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer_info .footer_name {
+    margin: 30px 0 10px;
+    line-height: 21px;
+    font-size: 13px;
+}
+
+.branch_tokyo {
+    margin-bottom: 10px;
+}
+
+#footer ul {
+    margin-left: 60px;
+    width: 50vw;
+    display: flex;
+    gap: 4.16vw;
+    flex-wrap: wrap;
+}
+
+.footer_btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 66px;
+    gap: 10px;
+}
+
+#footer button a {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right,
+            #fff 0%,
+            #fff 50%,
+            var(--red) 50%,
+            var(--red) 100%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+    transition: background-position ease 0.2s;
+}
+
+#footer button a:hover {
+    background-position: 0 0;
+    color: var(--red);
+}
+
+#footer button img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 14px;
+}
+
+#footer button a {
+    font-size: 12px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+#footer li {
+    position: relative;
+    margin-bottom: 40px;
+    width: 13.89vw;
+}
+
+#footer li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--black);
+}
+
+.footer_down {
+    font-family: 'Shippori Mincho B1','A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n",;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.06em;
+    color: #45484C;
+    font-family: "shippori-mincho", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.copyright {
+    padding: 30px 0;
+    text-align: center;
+}
+
+#footer ul li:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 480px) {
+    .spinner {
+        width: calc(108.4px / 1.5);
+        height: calc(122.5px/1.5);
+        margin: calc(50vh - calc(61px/1.5)) auto;
+        background-image: url(../images/logo_white.png);
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 48px;
+    }
+    .pc_br{
+        display: none;
+    }
+    .smp_item{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+
+
+    .header li:not(:last-child) a,
+    .header.sticky li:not(:last-child) a {
+        color: var(--black);
+        font-size: 15px;
+    }
+
+    .header ul{
+        gap: 30px;
+    }
+    #header li:last-child a {
+        /* width: 300px; */
+        padding: 14px 14px;
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: 200% auto;
+        background-image: linear-gradient(to right,
+                #fff 0%,
+                #fff 50%,
+                var(--red) 50%,
+                var(--red) 100%);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+        transition: background-position ease 0.2s;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        position: relative;
+        padding-left: 50px;
+    }
+    #header li:last-child a::before{
+        content: url(../images/mail.png);
+        display: inline-block;
+        transform: scale(0.5);
+        vertical-align: middle;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+    }
+
+    .header li:last-child a,
+    .header.sticky li:last-child a {
+        margin-top: 30px;
+    }
+
+    .header li:not(:last-child) a:before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background-color: var(--red);
+        margin-right: 12px;
+        margin-bottom: 3px;
+        vertical-align: middle;
+    }
+
+    .header li:nth-child(2) a:before {
+        background-color: #F0EF35;
+    }
+
+    .header li:nth-child(3) a:before {
+        background-color: var(--orange);
+    }
+    .header li:nth-child(4) a:before {
+        background-color: var(--blue);
+    }
+
+    .header li:nth-child(5) a:before {
+        background-color: #963FF5;
+    }
+    .header_inner{
+        padding: 10px 0 10px 20px;
+        align-items: center;
+        background: #fff;
+    }
+    .header_logo{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .header.sticky .header_logo {
+        width: 40px;
+    }
+
+    .header {
+        background-color: white;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    .header__nav {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        background-color: #fff;
+        transition: ease .4s;
+    }
+
+    @media screen and (min-width: 960px) {
+        .header__nav {
+            position: static;
+            transform: initial;
+            background-color: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: end;
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .nav__items {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: initial;
+            justify-content: space-between;
+        }
+    }
+
+    .nav-items {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+    }
+    
+    nav ul{
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 960px) {
+        .nav-items {
+            position: inherit;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+
+        }
+    }
+    .header__hamburger {
+        width: 48px;
+        height: 100%;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        border-color: transparent;
+        z-index: 9999;
+    }
+
+    @media screen and (min-width: 960px) {
+        .hamburger {
+            display: none;
+        }
+    }
+
+    /* ハンバーガーメニューの線 */
+    .hamburger span {
+        width: 20px;
+        height: 1px;
+        background-color: var(--black);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(2) {
+        margin: 8px 0;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(2) {
+        margin: 8px 0;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 0;
+    }
+    .hamburger.sticky span {
+        width: 20px;
+        height: 1px;
+        background-color: var(--black);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    /* ハンバーガーメニュークリック後のスタイル */
+    .header__nav.active {
+        transform: translateX(0);
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 5px;
+        transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        top: -13px;
+        transform: rotate(-45deg);
+    }
+
+    .fv_inner{
+        height: 140px;
+        margin-top: 60px;
+    }
+
+    #footer {
+        background-image: url(../images/footer_bg.jpg);
+        background-size: cover;
+        margin-top: 120px;
+    }
+
+    .footer_inner {
+        padding: 40px 20px 0;
+    }
+
+    .footer_upper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 44px;
+        flex-direction: column;
+    }
+
+    .footer_logo {
+        width: 200px;
+        display: none;
+    }
+
+    .footer_info p {
+        font-family: 'YuGothic';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer_info .footer_name {
+        margin: 30px 0 10px;
+        line-height: 21px;
+        font-size: 13px;
+    }
+
+    .branch_tokyo {
+        margin-bottom: 10px;
+    }
+
+    #footer ul {
+        margin-left: 0;
+        width: auto;
+        display: flex;
+        gap: 4.16vw;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer_btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 66px;
+        gap: 10px;
+    }
+
+    #footer button a {
+        width: 160px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: 200% auto;
+        background-image: linear-gradient(to right,
+                #fff 0%,
+                #fff 50%,
+                var(--red) 50%,
+                var(--red) 100%);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+        transition: background-position ease 0.2s;
+    }
+
+    #footer button a:hover {
+        background-position: 0 0;
+        color: var(--red);
+    }
+
+    #footer button img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 14px;
+    }
+
+    #footer button a {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 42px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+    }
+
+    #footer li {
+        position: relative;
+        margin-bottom: 40px;
+        width: auto;
+        text-align: center;
+    }
+
+    #footer li::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: var(--black);
+        opacity: 0.3;
+    }
+
+    .footer_down {
+        font-size: 38px;
+        line-height: 55px;
+        letter-spacing: 0.06em;
+    }
+
+    .copyright {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .footer_upleft {
+        order: 1;
+    }
+
+    .footer_upright {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_btn {
+        order: 2;
+        justify-content: center;
+    }
+
+    #footer ul li:last-child{
+        display: none;
+    }
+}

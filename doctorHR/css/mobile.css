@@ -1,0 +1,475 @@
+.sp_btn {
+    display: block;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    margin-bottom: 50px;
+}
+
+main button a {
+    font-size: 11.4897px;
+    line-height: 12px;
+    /* identical to box height, or 107% */
+    letter-spacing: 0.583945px;
+    padding: 16px 40px;
+}
+.section_title{
+    margin-bottom: 20px;
+    height: 90px;
+    background-size: 60%;
+    background-position: right 120%;
+}
+.section_title h2{
+    font-size: 20px;
+    line-height: 32px;
+}
+.section_title h3{
+    font-size: 14px;
+}
+#fv {
+    min-height: 463px;
+    position: relative;
+}
+h1 p{
+    margin-bottom: 0;
+}
+.logo {
+    width: 120px;
+}
+
+.header_inner {
+    padding: 30px;
+}
+
+.fv_inner {
+    flex-direction: column;
+    margin-left: 0;
+    position: relative;
+    margin-top: 10px;
+}
+
+.sp_btn {
+    background: var(--orange);
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 3px 11.4px rgba(0, 0, 0, 0.2);
+    border-radius: 64.2px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sp_btn a {
+    font-family: 'YuGothic',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    letter-spacing: 0.864px;
+    color: #FFFFFF;
+    padding: 20px 60px;
+}
+
+.fv_inner_left {}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+h1 span {
+    font-size: 50px;
+}
+
+.fv_img {
+    width: 100vw;
+    height: 274px;
+}
+
+.fv_btn {
+    display: none;
+}
+
+/*  */
+.question h2:after{
+    width: 60px;
+    bottom: -20%;
+}
+.question_box_container {
+    flex-direction: column;
+    padding: 40px;
+}
+
+.question_box {
+    width: 223px;
+}
+
+.question_box p {
+    font-size: 14px;
+    width: auto;
+}
+
+/*  */
+/* PROBLEM */
+/*  */
+.problem_box_img {
+    width: 197px;
+}
+.problem_box:first-child{
+    margin-bottom: 20px;
+}
+.problem_container{
+
+}
+/*  */
+.solution {
+    height: auto;
+}
+.solution_container{
+    margin-top: 20px;
+}
+.solution_box_container {
+    flex-direction: column;
+}
+
+/*  */
+.reason_box_container {
+    flex-direction: column;
+}
+
+.reason_num {
+    font-size: 28px;
+}
+
+.reason_txtbox h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.reason_txtbox p {
+    font-size: 13px;
+}
+
+.reason_img {
+    width: 140px;
+    height: 140px;
+}
+
+.reason {
+    margin-bottom: 100px;
+}
+
+/*  */
+.number_container {
+    flex-direction: column;
+}
+
+.number {
+    margin-bottom: 50px;
+}
+
+/* FLOW */
+.flow_img {
+    height: 242px;
+}
+
+/* intro */
+.introduction_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction {
+    margin-bottom: 50px;
+}
+
+.introduction_box .introduction_img {
+    margin: 0;
+}
+
+/* FAQ */
+
+.faq_question {
+    width: auto;
+}
+
+.q,
+.a {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.faq_question p,
+.faq_answer p {
+    font-size: 12px;
+}
+
+/* ARROW */
+.introduction_arrow,
+.solution_arrow {
+    transform: rotate(90deg);
+}
+
+.introduction_arrow {
+    margin: 0;
+}
+
+/*  */
+.btn p {
+    font-size: 12px;
+}
+
+/*  */
+/* PROBLEM */
+/*  */
+.problem_inner {
+    padding: 0px;
+}
+
+.problem_container {
+    padding: 54px 30px;
+}
+
+.problem_box {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.problem_box:nth-child(2) .problem_box_img {
+    order: 0;
+}
+
+/*  */
+/* SOLUTION */
+/*  */
+.solution_container {
+    text-align: center;
+}
+
+.solution h2 {
+    font-size: 24px;
+    letter-spacing: 1.69043px;
+    line-height: 46px;
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.solution_box {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin-top: 40px;
+}
+
+.solution_box_img {
+    width: 290px;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.solution_box h3 {
+    font-weight: 700;
+    font-size: 20.1px;
+    line-height: 29px;
+    letter-spacing: 1.52995px;
+}
+
+/*  */
+/* SERVICE */
+/*  */
+.service_inner{
+    width: auto;
+}
+.service_container{
+    padding: 0px;
+}
+.service_box_container {
+    flex-direction: column;
+    gap: 0px;
+    padding: 20px;
+}
+
+.service_box_container{
+    padding: 20px;
+}
+
+.service_details_container{
+    padding: 20px;
+}
+.service_details_container-u,
+.service_details_container-d {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service_details_box {
+    width: auto;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.service_title-l h3 {
+    font-size: 20px;
+}
+
+.service_text {
+    font-size: 14px;
+    margin: 0;
+    width: auto;
+}
+
+.service_details_heading {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.service_details_heading:after{
+    width: 80%;
+    height: 4px;
+}
+
+.service_box_under {
+    font-size: 14px;
+
+}
+.service_check{
+    width: 30px;
+}
+.service_details{
+    width: 74px;
+}
+/* REASON */
+/* REASON */
+/* REASON */
+.reason_box {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.reason .text {
+    margin-right: 0;
+}
+
+.reason .text {
+    width: auto;
+}
+
+.reason .num {
+    width: auto;
+    width: 88px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.reason .heading {
+    font-size: 20px;
+}
+
+.reason .normal {
+    font-size: 14px;
+}
+
+/* ACHIEVEMENT */
+/* ACHIEVEMENT */
+/* ACHIEVEMENT */
+.achievement_recruit_img {
+    display: none;
+}
+
+.achievement_recruit_sp {
+    display: block;
+    width: 328px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.achievement {
+    margin: 0 auto;
+}
+.achievement .subtitle-lv3,
+.faq .subtitle-lv3,
+.comparison .subtitle-lv3{
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.achievement .subtitle-lv3:after,
+.faq .subtitle-lv3:after,
+.comparison .subtitle-lv3:after{
+    width: 40px;
+}
+
+/* COACHING */
+/* COACHING */
+/* COACHING */
+.coaching_box_container {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coaching_box {
+    padding: 20px 40px;
+}
+
+.coaching_box_heading {
+    margin-bottom: 35px;
+}
+
+.coaching_box .heading-lv3 {
+    font-size: 17.84px;
+    line-height: 30px;
+    letter-spacing: 1.46594px;
+}
+
+.coaching_box_heading:after {
+    width: 100%;
+    height: 7px;
+    bottom: -15px;
+}
+
+.coaching_text_normal {
+    font-size: 15px;
+    margin-top: 0;
+    width: auto;
+}
+
+/* COMPARISON */
+/* COMPARISON */
+/* COMPARISON */
+.plan_comparison {
+    width: 100%;
+}
+
+.flow_comparison {
+    display: none;
+}
+
+.flow_comparison_sp {
+    display: block;
+    margin-bottom: 40px;
+}
+
+/* CONTACT */
+/* CONTACT */
+/* CONTACT */
+.contact {
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2.014px;
+}
+
+.contact{
+    background-size: 60%;
+    background-position: right 105%;
+}

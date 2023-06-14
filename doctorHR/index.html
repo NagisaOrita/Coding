@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!-- 769px以上 -->
+    <link rel="stylesheet" media="screen and (max-width: 768px)" type="text/css" href="css/tablet.css"><!-- 768px以下 -->
+    <link rel="stylesheet" media="screen and (max-width: 450px)" type="text/css" href="css/mobile.css"><!-- 450px以下 -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/pwz5gwe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <title>ドクター人事 LP</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div id="fv">
+        <header>
+            <div class="header_inner">
+                <figure class="logo"></figure>
+                <nav>
+                    <div class="nav_inner">
+                        <li><a href=""></a></li>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="fv_inner">
+            <div class="fv_inner_left">
+                <h1>
+                    <div class="txtbox">
+                        <p><span>ドクター人事</span>で</p>
+                        <p>採用周りのトラブル</p>
+                        <p>まとめて解決！</p>
+                    </div>
+                </h1>
+                <button class="fv_btn shine"><a href="./mail_form.php">無料オンライン面談</a></button>
+            </div>
+            <div class="fv_inner_right">
+                <figure class="fv_img"></figure>
+            </div>
+        </div>
+        <button class="sp_btn shine"><a href="./mail_form.php">無料オンライン面談</a></button>
+    </div>
+    <main>
+        <section class="question">
+            <h2>こんなお悩みございませんか？</h2>
+            <div class="question_box_container">
+                <div class="question_box">
+                    <img src="./images/nayami_1.png" alt="">
+                </div>
+                <div class="question_box">
+                    <img src="./images/nayami_2.png" alt="">
+                </div>
+                <div class="question_box">
+                    <img src="./images/nayami_3.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="problem">
+            <div class="problem_inner">
+                <div class="problem_container">
+                    <div class="problem_box">
+                        <figure class="problem_box_img">
+                            <img src="./images/problem_img_1.png" alt="">
+                        </figure>
+                        <div class="problem_text">
+                            <img src="./images/problem_text_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="problem_box">
+                        <figure class="problem_box_img">
+                            <img src="/images/problem_img_2.png" alt="">
+                        </figure>
+                        <div class="problem_text">
+                            <img src="/images/problem_text_2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="solution">
+            <div class="solution_inner">
+                <div class="solution_container">
+                    <h2>そろそろ、<br class="sp">その悩み解決しませんか？</h2>
+                    <div class="solution_box">
+                        <figure class="solution_box_img">
+                            <img src="./images/solution_img.png" alt="">
+                        </figure>
+                        <div class="solution_box_text">
+                            <h3 class="heading-lv3">
+                                ドクター人事なら<br>
+                                <span class="solution_box_text_bold">採用活動から従業員の定着</span><br>
+                                まで丸投げ可能です！
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="section_title">
+                <h2>サービス内容</h2>
+                <h3>SERVICE</h3>
+            </div>
+            <div class="service_inner">
+                <div class="service_container">
+                    <div class="service_box_container">
+                        <div class="service_box_container-u">
+                            <div class="service_box">
+                                <div class="service_title-l">
+                                    <div class="service_check">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <h3 class="service_title">採用戦略</h3>
+                                </div>
+                                <p class="service_text">
+                                    効果的な戦略の策定、採用プロセス改善、ニーズにマッチした人材の獲得に向けて共に伴走します。
+                                </p>
+                            </div>
+                            <div class="service_box">
+                                <div class="service_title-l">
+                                    <div class="service_check">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <h3 class="service_title">採用支援</h3>
+                                </div>
+                                <p class="service_text">
+                                    豊富な経験とノウハウ、蓄積されたデータに基づき、御社にマッチした人材の母集団を形成します。
+                                </p>
+                            </div>
+                            <div class="service_box">
+                                <div class="service_title-l">
+                                    <div class="service_check">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <h3 class="service_title">面談代行</h3>
+                                </div>
+                                <p class="service_text">
+                                    選考面談を採用のプロが行うことで、工数削減だけでなく、しっかり欲しい人材をアトラクトします。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_box_container-d">
+                            <div class="service_box">
+                                <div class="service_title-l">
+                                    <div class="service_check">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <h3 class="service_title">人事部立ち上げ</h3>
+                                </div>
+                                <p class="service_text">
+                                    採用に必要なノウハウをご提供。自社内にて効果的な採用を行うことが可能になります。
+                                </p>
+                            </div>
+                            <div class="service_box">
+                                <div class="service_title-l">
+                                    <div class="service_check">
+                                        <img src="./images/check.png" alt="">
+                                    </div>
+                                    <h3 class="service_title">従業員教育</h3>
+                                </div>
+                                <p class="service_text">
+                                    従業員の定着や業務に必要なマインドセットをコーチング歴20年のプロが担当します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service_details_container">
+                        <div class="service_details_container-u">
+                            <div class="service_details_box">
+                                <h3 class="service_details_heading">採用戦略</h3>
+                                <div class="service_box_under">
+                                    <ul>
+                                        <li>ペルソナ設計</li>
+                                        <li>従業員アンケート</li>
+                                        <li>1on1インタビュー</li>
+                                        <li>魅力洗い出し</li>
+                                        <li>人員計画</li>
+                                        <li>予算計画</li>
+                                    </ul>
+                                    <figure class="service_details">
+                                        <img src="./images/service_1.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="service_details_box">
+                                <h3 class="service_details_heading">採用支援</h3>
+                                <div class="service_box_under">
+                                    <ul>
+                                        <li>求人要項の作成</li>
+                                        <li>募集文の作成</li>
+                                        <li>媒体契約</li>
+                                        <li>要件見直し</li>
+                                        <li>採用チャネル決定</li>
+                                        <li>エージェント選定</li>
+                                    </ul>
+                                    <figure class="service_details">
+                                        <img src="./images/service_2.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service_details_container-d">
+                            <div class="service_details_box">
+                                <h3 class="service_details_heading">面談代行</h3>
+                                <div class="service_box_under">
+                                    <ul>
+                                        <li>スケジュール管理</li>
+                                        <li>書類選考</li>
+                                        <li>一次面接から最終面接</li>
+                                        <li>面接結果FB</li>
+                                        <li>問い合わせ対応</li>
+                                        <li>カジュアル面談</li>
+                                    </ul>
+                                    <figure class="service_details">
+                                        <img src="./images/service3.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="service_details_box">
+                                <h3 class="service_details_heading">教育･人事立ち上げ</h3>
+                                <div class="service_box_under">
+                                    <ul>
+                                        <li>行動指針共有</li>
+                                        <li>目標明確化</li>
+                                        <li>主体性の育成</li>
+                                        <li>社内コミュニケーション<br>
+                                            活性化</li>
+                                        <li>人事コーチング</li>
+                                        <li>リーダーシップ<br>
+                                            コーチング</li>
+                                    </ul>
+                                    <figure class="service_details">
+                                        <img src="./images/service4.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reason">
+            <div class="section_title reason_title">
+                <h2>ドクター人事が選ばれる理由</h2>
+                <h3>WHY DOCTOR HR</h3>
+            </div>
+            <div class="reason_box_container">
+                <div class="reason_box">
+                    <div class="num">
+                        <img src="./images/reason_num_01.png" alt="01">
+                    </div>
+                    <div class="text">
+                        <h4 class="heading">採用から教育まで、全て丸投げ可能！</h4>
+                        <p class="normal">｢採用戦略｣から｢教育｣までの面倒な採用の一連の作業を全て任せていただくことが可能です！</p>
+                    </div>
+                    <figure class="reason_img">
+                        <img src="./images/reason_1.png" alt="面接する人">
+                    </figure>
+                </div>
+                <div class="reason_box">
+                    <div class="num">
+                        <img src="./images/reason_num_02.png" alt="02">
+                    </div>
+                    <div class="text">
+                        <h4 class="heading">採用のプロ集団のノウハウが業界最安で</h4>
+                        <p class="normal">実績のある人事のプロ集団がコストを抑えつつも必要な人材を採用します。</p>
+                    </div>
+                    <figure class="reason_img">
+                        <img src="./images/reason_2.png" alt="お金が貯まる">
+                    </figure>
+                </div>
+                <div class="reason_box">
+                    <div class="num">
+                        <img src="./images/reason_num_03.png" alt="03">
+                    </div>
+                    <div class="text">
+                        <h4 class="heading">カスタマイズ可能。必要なサポートを必要な時に</h4>
+                        <p class="normal">｢採用戦略｣、｢採用支援｣、｢面談代行｣、｢人事部立ち上げ｣、｢教育｣の中から必要なサポートを選べます。</p>
+                    </div>
+                    <figure class="reason_img">
+                        <img src="./images/reason_3.png" alt="喜ぶ人">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="achievement">
+            <div class="section_title achievement_title">
+                <h2>実績例</h2>
+                <h3>ACHIEVEMENT</h3>
+            </div>
+            <div class="achievement_inner">
+                <div class="achievement_container">
+                    <div class="achievement_box_container">
+                        <h3 class="subtitle-lv3">採用実績</h3>
+                        <figure class="achievement_recruit_img">
+                            <img src="./images/achievement_recruit_img_01.png" alt="">
+                        </figure>
+                        <figure class="achievement_recruit_img">
+                            <img src="./images/achievement_recruit_img_02.png" alt="">
+                        </figure>
+                        <figure class="achievement_recruit_img">
+                            <img src="./images/achievement_recruit_img_03.png" alt="">
+                        </figure>
+                        <figure class="achievement_recruit_sp">
+                            <img src="./images/achievement_recruit_sp_01.png" alt="">
+                        </figure>
+                        <figure class="achievement_recruit_sp">
+                            <img src="./images/achievement_recruit_sp_02.png" alt="">
+                        </figure>
+                        <figure class="achievement_recruit_sp">
+                            <img src="./images/achievement_recruit_sp_03.png" alt="">
+                        </figure>
+                    </div>
+                    <h3 class="subtitle-lv3 coaching_title">定着･教育実績</h3>
+                    <div class="coaching_box_container">
+                        <div class="coaching_box">
+                            <div class="coaching_box_heading">
+                                <figure class="coaching_img">
+                                    <img src="./images/achivement_1.png" alt="">
+                                </figure>
+                                <h3 class="heading-lv3">
+                                    大手派遣会社<br>DK様
+                                </h3>
+                            </div>
+                            <p class="coaching_text_normal">
+                                チームメンバーが自ら責任者として立つようになり、 チャレンジ志向の非常にパワフルな組織になりました。
+                            </p>
+                        </div>
+                        <div class="coaching_box">
+                            <div class="coaching_box_heading">
+                                <figure class="coaching_img">
+                                    <img src="./images/achievement_2.png" alt="">
+                                </figure>
+                                <h3 class="heading-lv3">
+                                    有名不動産会社<br>TT様
+                                </h3>
+                            </div>
+                            <p class="coaching_text_normal">
+                                (不動産コンサルティング)会社が活気づいて、営業マンの 売上が3ヶ月で1.5倍になりました。今では10倍以上です!
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="slide_items">
+                        <li>
+                            <img src="./images/company_logos.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/company_logos02.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="comparison">
+            <div class="section_title comparison_title">
+                <h2>比較で見るドクター人事</h2>
+                <h3>COMPARISON</h3>
+            </div>
+            <h3 class="subtitle-lv3">対応可能業務業務比較</h3>
+            <div class="flow_comparison">
+                <img src="./images/flow_comparison.png" alt="">
+            </div>
+            <div class="flow_comparison_sp">
+                <img src="./images/flow_comparison_sp.png" alt="">
+            </div>
+            <h3 class="subtitle-lv3">プラン比較</h3>
+            <div class="plan_comparison">
+                <img src="./images/plan_comparison.png" alt="">
+            </div>
+        </section>
+
+        <section class="introduction">
+            <div class="section_title flow_title">
+                <h2>簡単導入フロー</h2>
+                <h3>4 STEPS FLOW</h3>
+            </div>
+            <div class="introduction_container">
+                <div class="introduction_box">
+                    <figure class="introduction_img">
+                        <img src="./images/" alt="">
+                    </figure>
+                    <h4>オンライン面談</h4>
+                    <p>オンライン面談にて課題をヒアリングします。目的や方針について話します。</p>
+                </div>
+                <div class="introduction_arrow"></div>
+                <div class="introduction_box">
+                    <figure class="introduction_img"></figure>
+                    <h4>契約前面談</h4>
+                    <p>期限、価格、サービス内容について話し合い、具体的な内容を話し合います。</p>
+                </div>
+                <div class="introduction_arrow"></div>
+                <div class="introduction_box">
+                    <figure class="introduction_img"></figure>
+                    <h4>契約締結</h4>
+                    <p>ドクター人事と業務委託契約を締結。パートナーとして伴走します。</p>
+                </div>
+                <div class="introduction_arrow"></div>
+                <div class="introduction_box">
+                    <figure class="introduction_img"></figure>
+                    <h4>キックオフ</h4>
+                    <p>具体的なアクションプラン策定や情報共有、意思疎通をしていきます。</p>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <h2 class="subtitle-lv3">よくある質問</h2>
+            <div class="faq_container">
+                <div class="faq_question faq_question_1">
+                    <div class="faq_box">
+                        <div class="q">Q</div>
+                        <p>月額料金以外でかかる費用はありますか？</p>
+                    </div>
+                    <div class="faq_arrow"></div>
+                </div>
+                <div class="faq_answer faq_answer_1">
+                    <div class="faq_box">
+                        <div class="a">A</div>
+                        <p>初期費用もかからないので安心してご利用いただけます。</p>
+                    </div>
+                </div>
+                <div class="faq_question faq_question_2">
+                    <div class="faq_box">
+                        <div class="q">Q</div>
+                        <p>どのような企業が利用していますか？</p>
+                    </div>
+                    <div class="faq_arrow"></div>
+                </div>
+                <div class="faq_answer faq_answer_2">
+                    <div class="faq_box">
+                        <div class="a">A</div>
+                        <p>これから伸びていきたい中小･ベンチャー企業様がご利用されます。</p>
+                    </div>
+                </div>
+                <div class="faq_question faq_question_3">
+                    <div class="faq_box">
+                        <div class="q">Q</div>
+                        <p>媒体の提案はありますか？</p>
+                    </div>
+                    <div class="faq_arrow"></div>
+                </div>
+                <div class="faq_answer faq_answer_3">
+                    <div class="faq_box">
+                        <div class="a">A</div>
+                        <p>適切な媒体を用いて効果を最大化させていただけます。</p>
+                    </div>
+                </div>
+                <div class="faq_question faq_question_4">
+                    <div class="faq_box">
+                        <div class="q">Q</div>
+                        <p>途中で解約はできますか？</p>
+                    </div>
+                    <div class="faq_arrow"></div>
+                </div>
+                <div class="faq_answer faq_answer_4">
+                    <div class="faq_box">
+                        <div class="a">A</div>
+                        <p>1ヶ月単位のプランもご用意させていただいております。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <p>採用媒体の運用方法や採用周り全般について、<br>
+            ｢貴社に成り代わって｣コミットいたします。</p>
+            <button class="contact_btn shine"><a href="./mail_form.php" >無料オンライン面談</a></button>
+        </section>
+    </main>
+    <footer>
+        <p>ドクター人事</p>
+        <p>© HR Tech Management 株式会社</p>
+    </footer>
+    <script>
+        $(function () {
+            $(".faq_question_1").click(function () {
+                $(".faq_answer_1").slideToggle("");
+            });
+            $(".faq_question_2").click(function () {
+                $(".faq_answer_2").slideToggle("");
+            });
+            $(".faq_question_3").click(function () {
+                $(".faq_answer_3").slideToggle("");
+            });
+            $(".faq_question_4").click(function () {
+                $(".faq_answer_4").slideToggle("");
+            });
+        });
+        $(".slide_items").slick({
+            autoplay: true, // 自動再生
+            autoplaySpeed: 4000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+            infinite: true, // 無限スライド
+        })
+
+    </script>
+</body>
+
+</html>

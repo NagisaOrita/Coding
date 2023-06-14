@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Helvetica Neue",
+        Arial,
+        "YuGothic", "Yu Gothic",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    color: #3d3d3d;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.c-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+:root {
+    --green: #6FC878;
+    --black: #3D3D3D;
+}
+
+.logo {
+    background-image: url(../images/doctor_logo_white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+.header_inner {
+    padding: 20px 100px 20px 100px;
+}

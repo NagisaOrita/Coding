@@ -1,0 +1,431 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", sans-serif;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    color: #45484C;
+
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #45484C;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.c-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+/* Colors */
+/* ----------------------------------------------------------------------------------- */
+:root {
+    --brown: #C1811F;
+    --green: #1878AD;
+    --red: #C30D23;
+    --lightgreen: #679A3B;
+    --yellow: #F5E929;
+    --orangepink: #F16262;
+    --blue: #41B4F0;
+    --black: #45484C;
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.brown {
+    background-color: var(--brown);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+/* 
+
+ABOUT PAGE
+
+*/
+h5 {
+    font-family: 'A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n", 'Shippori Mincho B1', "YuMincho", "Yu Mincho", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.04em;
+}
+
+h4 {
+    font-family: 'Cormorant Garamond', "Cormorant", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', "Cormorant", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h2 {
+    font-family: 'A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n", 'Shippori Mincho B1', "YuMincho", "Yu Mincho", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 74px;
+}
+
+h1 {
+    font-family: 'A-OTF Ryumin Pr6N', "a-otf-ryumin-pr6n", 'Shippori Mincho B1', "YuMincho", "Yu Mincho", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+}
+
+.number {
+    font-family: 'Cormorant', 'Cormorant Garamond', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 120px;
+}
+
+.credo_down p {
+    font-family: 'YuGothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    /* or 210% */
+
+    letter-spacing: 0.04em;
+}
+
+/* 
+
+header
+
+*/
+.header_inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.header_logo {
+    width: 75px;
+}
+
+ul {
+    display: flex;
+    gap: 55px;
+}
+
+.about_img {
+    background-image: url(../images/about_ceo.png);
+    background-size: cover;
+    border-radius: 25px;
+    width: 56.18vw;
+    height: 290px;
+}
+
+.fv_inner {
+    background-image: url(../images/footer_bg.jpg);
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+credo upper
+*/
+#credo {
+    margin-right: 200px;
+}
+
+.credo_up {
+    margin-top: 200px;
+    margin-left: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+
+.credo_logo {
+    width: 180px;
+}
+
+.introduction p {
+    font-size: 24px;
+    line-height: 70px;
+    margin-bottom: 50px;
+}
+
+.introduction p:last-child {
+    margin: 0;
+}
+
+.introduction p::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--red);
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.introduction p:nth-child(2)::before {
+    background-color: var(--yellow);
+}
+
+.introduction p:nth-child(3)::before {
+    background-color: var(--blue);
+}
+
+/* 
+title
+*/
+.section_title {
+    margin: 160px 0 160px 86px;
+}
+
+/* 
+down
+*/
+.credo_box_right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.credo_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.credo_upper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.credo_upper .number {
+    margin-top: -24px;
+}
+
+.number::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--red);
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.credo_2 .number::before {
+    background-color: var(--yellow);
+}
+
+.credo_3 .number::before {
+    background-color: var(--blue);
+}
+
+h5::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--red);
+    margin-right: 30px;
+    vertical-align: middle;
+    margin-top: -10px;
+}
+
+.credo_2 h5::before {
+    background-color: var(--yellow);
+}
+
+.credo_3 h5::before {
+    background-color: var(--blue);
+}
+
+.credo_dwn {
+    margin-left: 385px;
+    width: 38.89vw;
+}
+
+h5 {
+    margin-bottom: 40px;
+}
+
+.credo_1 {
+    margin-bottom: 80px;
+}
+
+.credo_2 {
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.04em;
+    }
+
+    main {
+        margin: 0px 20px;
+    }
+
+    /* FIX */
+    #credo {
+        margin-right: 0;
+    }
+
+    .credo_up {
+        margin: 0;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .credo_logo {
+        width: 100px;
+        order: 10;
+    }
+
+    .section_title {
+        display: none;
+    }
+
+    .credo_dwn {
+        margin: 0;
+        width: auto;
+    }
+
+    .credo_upper {
+        gap: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* FONTS */
+    .introduction p {
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+
+        letter-spacing: 0.02em;
+    }
+
+    .number {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    h4 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 32px;
+        /* identical to box height, or 178% */
+
+        letter-spacing: 0.04em;
+    }
+
+    /* BOX AND LINE SIZE FIX :BEFORE */
+    .introduction p::before {
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+    }
+    .number::before {
+        width: 8px;
+        height: 8px;
+        margin-right: 14px;
+    }
+    h5::before {
+        width: 20px;
+        height: 3px;
+        margin-right: 10px;
+        margin-top: -5px;
+    }
+
+    /* MARGIN HEIGHTS */
+    .introduction{
+        margin-top: 60px;
+    }
+    .introduction p{
+        margin-bottom: 30px;
+    }
+    .credo_up{
+        gap: 60px;
+    }
+    .credo_box_right{
+        margin-top: 60px;
+    }
+    .credo_upper{
+        margin-bottom: 10px;
+    }
+    h5{
+        margin-bottom: 30px;
+    }
+}

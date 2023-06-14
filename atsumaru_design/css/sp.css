@@ -1,0 +1,256 @@
+@media screen and (max-width:468px) {
+
+    /* UNIVERSAL */
+    body {
+        font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+        height: 100%;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 27px;
+        letter-spacing: 0em;
+        color: #333333;
+        margin: 0;
+    }
+
+    .section_title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .contact_btn:not(.header_btn) a {
+        width: 278px;
+        height: 72px;
+        font-size: 16px;
+    }
+
+    .header_btn{
+        display: none;
+    }
+
+    /* HEADER */
+    .header_inner{
+        padding: 20px 20px;
+    }
+    .logo{
+        width: 120px;
+    }
+    /* FOOTER */
+    .footer_inner {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-image-source: url(../images/border_bg_footer.png);
+        text-align: center;
+        padding: 60px 0;
+    }
+    .footer_logo{
+        margin-bottom: 20px;
+    }
+    .footer_logo img{
+        width: 50%;
+    }
+    .footer_inner p{
+        font-size: 11px;
+    }
+
+    /* SECTION */
+
+    .fv_inner {
+        border: 10px solid;
+        border-image-slice: 1;
+        text-align: center;
+        position: relative;
+        border-image-source: url(../images/border_bg.png);
+        /* height: 100vh; */
+    }
+
+    /* FV SP で H1 文字切り替え */
+    h1 img{ 
+        display: none;
+    }
+    h1{
+        height: 211px;
+        background-image: url(../images/fv_title_sp.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-bottom: 350px;
+    }
+    .fv_imgs .fv_img{
+        display: none;
+    }
+    .fv_imgs{
+        background-image: url(../images/fv_imgs_sp.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100vw;
+        height: 400px;
+    }
+    /* PROBLEM */
+    .problem_inner {
+        margin: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .problem {
+        padding: 20px 0;
+    }
+
+    .problem_list li::before {
+        top: auto;
+        bottom: -21px;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        border: 10px solid transparent;
+        border-top-color: #ccc;
+    }
+
+    .problem_list li::after {
+        top: auto;
+        bottom: -20px;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        border: 10px solid transparent;
+        border-top-color: #fff;
+    }
+
+    /* SOLUTION */
+    .solution {
+        text-align: center;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-image-source: url(../images/border_bg.png);
+        padding: 20px 0;
+    }
+
+    .solution_inner {
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+    }
+
+    .solution_inner h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+
+    .solution_list {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .solution_list li {
+        font-size: 12px;
+        margin-bottom: 8px;
+        position: relative;
+    }
+
+    .solution_list img {
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        left: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* MERIT INNER */
+    .merit_inner h2 {
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .merit_inner{
+        background-attachment: scroll;
+    }
+
+    .merit_txtbox {
+        padding: 0 20px;
+    }
+
+    .txtbox_top {
+        padding: 20px 0;
+    }
+
+    .merit_txtbox h3 {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    .num img {
+        height: 20px;
+    }
+
+    .merit_txtbox p {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    #fixed-area{
+        width: 70%;
+        margin: auto;
+    }
+
+    /* OPERATION */
+    .operation {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-image-source: url(../images/border_bg.png);
+        padding: 20px 0;
+    }
+
+    .operation_container {
+        margin-bottom: 20px;
+    }
+
+    .operation_txtbox {
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    .operation_txtbox_top {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    /* INTRODUCTION */
+    .introduction_inner {
+        padding: 20px 0;
+    }
+
+    .introduction h2 {
+        margin-bottom: 20px;
+    }
+
+    .c-inner {
+        padding: 0 20px 0;
+        margin-bottom: 20px;
+    }
+
+    .c-title {
+        font-size: 20px;
+    }
+
+    .c-text p {
+        font-size: 12px;
+    }
+
+    .c-heading {
+        gap: 20px;
+    }
+
+    .c-heading img {
+        height: 50%;
+        width: 70%;
+    }
+}
