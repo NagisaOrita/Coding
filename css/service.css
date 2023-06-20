@@ -831,6 +831,67 @@ dd {
     margin-bottom: 1vh;
 }
 
+/*  */
+/* 事業情報追加につき、ボタンのレイアウト変更する箇所 */
+/*  */
+/* 親要素をアブソリュートに */
+.content {
+    position: relative;
+}
+/* 前の効果を打ち消すためにIMPORTANT */
+/* absoluteでボタンを浮かせる */
+.normal-link{
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.normal-link a {
+    background-image: none !important;
+    color: #aaa !important;
+    background-position: auto !important;
+    background-size: auto !important;
+    padding: 10px 20px 10px 10px !important;
+    transition: .3s !important;
+}
+
+.normal-link p {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.normal-link a:hover {
+    color: var(--black) !important;
+    margin: 10px;
+}
+/* マージンのみ適用クラス */
+.is-ml20 {
+    margin-left: 20px;
+}
+
+/* ボタンの矢印作成 */
+.arrow {
+    position: relative;
+    /* display: inline-block; */
+    /* padding: 10px; */
+}
+
+.arrow::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: solid 2px #aaa;
+    border-right: solid 2px #aaa;
+    position: absolute;
+    left: -20px;
+    top: -7px;
+    transform: translate(-10px, -10px);
+}
+
+.arrow.arrow-right::before {
+    transform: rotate(45deg);
+}
 
 @media screen and (max-width: 480px) {
     .slide-items h3 {
@@ -993,6 +1054,14 @@ dd {
         margin-bottom: 40px;
     }
 
+    .normal-link p{
+        margin-bottom: 0;
+    }
+    .normal-link{
+        bottom: auto;
+        right: 0;
+        top: -7%;
+    }
     .dwn {
         margin-left: 0;
     }
